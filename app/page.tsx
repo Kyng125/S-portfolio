@@ -9,9 +9,9 @@ export default function Landing() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Set a small delay to simulate the image loading after the blank screen
+    // Delay the image load to simulate a blank screen before the animation
     const timeout = setTimeout(() => setIsLoaded(true), 500); // 0.5s delay before image appears
-    return () => clearTimeout(timeout); // Cleanup on unmount
+    return () => clearTimeout(timeout); // Cleanup timeout on unmount
   }, []);
 
   const handleImageClick = () => {
@@ -28,7 +28,7 @@ export default function Landing() {
             width={250}
             height={250}
             priority
-            className={`rounded-full shadow-sm shadow-purple-400 transform ${
+            className={`rounded-full shadow-sm shadow-purple-400 transition-transform duration-300 ${
               isLoaded ? "animate-slide-up" : "opacity-0"
             } image-hover-effect`}  // Add hover effect class
           />

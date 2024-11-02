@@ -1,14 +1,20 @@
+'use client'
+
 import React from "react";
 
 const Navbar = () => {
+  const handleClick = () => {
+    console.log("message")
+  }
+
   return (
     <div>
-      <div className="navbar bg-base-100 rounded-2xl">
+      <div className="navbar bg-indigoPurple rounded-2xl p-5">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Sanera</a>
+          <a className="font-extrabold text-xl">SANERA</a>
         </div>
-        <div className="flex-none">
-          <button className="btn btn-square btn-ghost">
+        <div className="flex justify-evenly gap-5 lg:gap-14 text-sm font-semibold">
+          {/* <button className="btn btn-square btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -22,7 +28,10 @@ const Navbar = () => {
                 d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
               ></path>
             </svg>
-          </button>
+          </button> */}
+          <div className="uppercase transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer" onClick={handleClick}>About</div>
+          <div className="uppercase transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer" onClick={handleClick}>Services</div>
+          <div className="uppercase transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer" onClick={handleClick}>Contact</div>
         </div>
       </div>
     </div>

@@ -32,25 +32,28 @@ body {
   }
 }
 
+/* Keyframe for sliding the image up */
 @keyframes slide-up {
   0% {
-    transform: translateY(100vh); /* Start off-screen below the viewport */
+    transform: translateY(100vh); /* Start off-screen at the bottom */
     opacity: 0;
   }
   100% {
-    transform: translateY(0); /* End at the center */
+    transform: translateY(0); /* End in the center */
     opacity: 1;
   }
 }
 
+/* Apply the animation to slide the image up */
 .animate-slide-up {
-  animation: slide-up 1s ease-out forwards; /* Keep final state after animation */
+  animation: slide-up 1s ease-out forwards;
 }
 
+/* Hover effect to scale the image */
 .image-hover-effect {
   transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .image-hover-effect:hover {
-  transform: scale(1.1); /* Scale image on hover */
+  transform: scale(1.1); /* Scale the image on hover */
 }
