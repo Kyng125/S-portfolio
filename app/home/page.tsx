@@ -16,7 +16,7 @@ const home = () => {
       </header>
       <main className="flex flex-wrap mt-5">
         <div className="flex lg:flex-1 flex-wrap justify-center mr-5">
-          <div className="flex flex-row p-2 mb-5 rounded-box w-full">
+          <div className="flex flex-row p-2 mb-2 rounded-box w-full">
             <div className="card bg-weirdWhite text-primary-content flex flex-grow mr-5">
               <div className="card-body">
                 <h2 className="card-title">About Me</h2>
@@ -74,9 +74,11 @@ const home = () => {
                   <p className="text-pink1">resume</p>
                 </div>
                 <div className="card-actions justify-center">
-                  <button className="btn bg-indigoPurple border-none text-white uppercase font-bold transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer hover:bg-amber hover:text-black">
-                    View
-                  </button>
+                  <div className="btn bg-indigoPurple border-none">
+                    <button className="btn bg-indigoPurple border-none text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-2000 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                      View
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,18 +109,26 @@ const home = () => {
                 SERVICE<span className="text-electricPurple">info</span>
               </h2>
               <div className="flex flex-col text-white text-2xl font-bold items-center">
-                <p className="mb-5 bg-indigoPurple p-5 rounded-box transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer hover:bg-amber hover:text-black">
-                  TWEETS
-                </p>
-                <p className="mb-5 bg-indigoPurple p-5 rounded-box transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer hover:bg-amber hover:text-black">
-                  THREADS
-                </p>
-                <p className="mb-5 bg-indigoPurple p-5 rounded-box transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer hover:bg-amber hover:text-black">
-                  SPACES & AMAs
-                </p>
-                <p className="mb-5 bg-indigoPurple p-5 rounded-box transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer hover:bg-amber hover:text-black">
-                  SPECIAL PACKAGE
-                </p>
+                <div className="btn bg-indigoPurple border-none mb-5">
+                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-2000 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                    TWEETS
+                  </button>
+                </div>
+                <div className="btn bg-indigoPurple border-none mb-5">
+                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-2000 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                    THREADS
+                  </button>
+                </div>
+                <div className="btn bg-indigoPurple border-none mb-5">
+                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-2000 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                    SPACES & AMAs
+                  </button>
+                </div>
+                <div className="btn bg-indigoPurple border-none mb-5">
+                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-2000 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                    SPECIAL PACKAGE
+                  </button>
+                </div>
               </div>
             </div>
           </div>
