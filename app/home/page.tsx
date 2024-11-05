@@ -39,10 +39,10 @@ const Home = () => {
               <div className="card-body">
                 <h2 className="card-title font-extrabold text-4xl">About Me</h2>
                 <p className="font-semibold">
-                  Hi, I'm Sanera. I'm a web3 enthusiast and extraordinaire.
+                  Hi, I&apos;m Sanera. I&apos;m a web3 enthusiast and extraordinaire.
                   Having spent a considerable amount of time honing my craft and
                   skills, and achieving standard results to prove my competence
-                  and excellence, I'm confident I can produce excellent results
+                  and excellence, I&apos;m confident I can produce excellent results
                   in whatever you might want me to do for you.
                 </p>
 
@@ -50,11 +50,11 @@ const Home = () => {
                   What else do I have to say?
                 </h2>
                 <p className="font-bold text-xs leading-relaxed">
-                  "Don't be afraid to take that{" "}
+                  &quot;Don&apos;t be afraid to take that{" "}
                   <span className="text-pink1">leap, </span>
-                  Just do whatever it is you've always wanted. You're actually
+                  Just do whatever it is you&apos;ve always wanted. You&apos;re actually
                   running out of time so stop wasting it... <br />
-                  GM 🤍"
+                  GM 🤍&quot;
                 </p>
               </div>
             </div>
