@@ -6,7 +6,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Modal from "../components/Modal";
 
-const home = () => {
+const Home = () => {
   const [isAboutModalVisible, setIsAboutModalVisible] = useState(false);
   const [isServicesModalVisible, setIsServicesModalVisible] = useState(false);
   const router = useRouter();
@@ -208,4 +208,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
