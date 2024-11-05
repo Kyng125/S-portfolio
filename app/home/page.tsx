@@ -38,7 +38,7 @@ const Home = () => {
             <div className="card bg-amber text-primary-content flex flex-grow mr-5">
               <div className="card-body">
                 <h2 className="card-title font-extrabold text-4xl">About Me</h2>
-                <p className="font-semibold">
+                <p className="font-light">
                   Hi, I&apos;m Sanera. I&apos;m a web3 enthusiast and extraordinaire.
                   Having spent a considerable amount of time honing my craft and
                   skills, and achieving standard results to prove my competence
@@ -46,12 +46,12 @@ const Home = () => {
                   in whatever you might want me to do for you.
                 </p>
 
-                <h2 className="card-title text-xs text-amber mt-4 text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-white">
+                <h2 className="card-title italic text-xs text-amber mt-4 text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">
                   What else do I have to say?
                 </h2>
-                <p className="font-bold text-xs leading-relaxed">
+                <p className="font-regular italic text-xs leading-relaxed">
                   &quot;Don&apos;t be afraid to take that{" "}
-                  <span className="text-pink1">leap, </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">leap, </span>
                   Just do whatever it is you&apos;ve always wanted. You&apos;re actually
                   running out of time so stop wasting it... <br />
                   GM 🤍&quot;
@@ -94,7 +94,7 @@ const Home = () => {
                     Portfolio
                   </h2>
                   <p className="font-extrabold">&</p>
-                  <p className="text-pink1">resume</p>
+                  <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">resume</p>
                 </div>
                 <div className="card-actions justify-center">
                   <div className="btn bg-indigoPurple border-none">
@@ -132,7 +132,7 @@ const Home = () => {
           <div className="card bg-amber text-primary-content w-full lg:w-96 mb-5">
             <div className="card-body items-center">
               <h2 className="card-title mb-10 font-bold text-2xl">
-                SERVICE<span className="text-electricPurple">info</span>
+                SERVICE<span className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">info</span>
               </h2>
               <div className="flex flex-col text-white text-2xl font-bold items-center">
                 <div className="btn bg-indigoPurple border-none mb-10">
