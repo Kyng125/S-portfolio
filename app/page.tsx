@@ -28,14 +28,12 @@ export default function Landing() {
             width={250}
             height={250}
             priority
-            className={`lg:p-10 rounded-full transition-transform duration-300 ${
-              isLoaded ? "flicker-in-1" : "opacity-0"
-            } image-hover-effect`}  // Add hover effect class
+            className={`lg:p-10 rounded-full transition-transform duration-300 image-hover-effect`}  // Add hover effect class
           />
         </button>
-        <p className={`text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r via-pink1 from-electricPurple to-amber ${
+        <h1 className={`text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r via-pink1 from-electricPurple to-amber ${
               isLoaded ? "tracking-in-expand" : "opacity-0"
-            } image-hover-effect`}>SANERA</p>
+            } image-hover-effect`}>SANERA</h1>
       </div>
     </div>
   );

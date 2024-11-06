@@ -56,6 +56,7 @@ body {
 
 .image-hover-effect:hover {
   transform: scale(1.1); /* Scale the image on hover */
+  cursor: pointer;
 }
 
 
@@ -99,6 +100,14 @@ body {
   animation: flicker-in-1 2s linear both;
 }
 
+.hover-flicker {
+  animation: flicker-in-1 1s linear both;
+}
+
+.hover-flicker:hover {
+  cursor: pointer;
+  animation: flicker-in-1;
+}
 
 
 /* Keyframes for tracking in expand */
