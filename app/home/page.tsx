@@ -28,7 +28,7 @@ const Home = () => {
   };
 
   return (
-    <div className="h-full p-5">
+    <div className="min-h-screen w-fit h-full p-5 bg-black">
       <header>
         <Navbar />
       </header>
@@ -58,7 +58,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="card lg:w-56 w-48 min-w-48 relative overflow-hidden border-amber border-y-2">
+            <div className="card flex lg:w-56 w-48 min-w-48 relative overflow-hidden border-amber border-y-2">
               <div className="card-body p-0 relative h-full">
                 {/* Image covers the entire card */}
                 <Image
