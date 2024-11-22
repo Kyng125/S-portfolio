@@ -19,7 +19,7 @@ export default function Landing() {
   };
 
   return (
-    <div className="w-fit md:w-lvw h-screen flex justify-center items-center bg-black">
+    <div className="w-screen md:w-lvw h-screen flex justify-center items-center bg-black">
       <div className="flex flex-col lg:flex-row items-center gap-5 p-5 lg:p-0" onClick={handleImageClick}>
         <button>
           <Image
