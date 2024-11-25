@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import Modal from "./Modal";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isAboutModalVisible, setIsAboutModalVisible] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-indigoPurple rounded-2xl p-5">
+      <div className="navbar bg-indigoPurple rounded-2xl p-5 shadow-md shadow-black fixed top-3 left-3 right-2 box-border w-full z-10">
         <div className="flex-1">
           <p
             className="font-extrabold text-xl text cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-amber transition-transform duration-200 ease-linear transform hover:scale-110"
@@ -63,16 +64,49 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       {isAboutModalVisible && (
         <Modal
-          className="text-customGold text-3xl uppercase border border-customGold rounded-box p-6 flex flex-col text-center items-center bg-base-300 bg-opacity-60"
-          content={<div className="flex flex-col items-center">Loading...</div>}
+          className="text-3xl border-2 shadow-sm shadow-pink1 border-indigoPurple rounded-box px-10 pb-10 pt-6 flex flex-col text-center items-center bg-black bg-opacity-100"
+          content={
+            <div className="flex flex-col items-center">
+              <div className="mb-5">
+                <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">
+                  ABOUT ME
+                </h1>
+              </div>
+              <div className="flex flex-row items-center">
+                <div className="flex-1">
+                  <Image
+                    src="/sanera_bg.jpg"
+                    alt="Sanera"
+                    // layout="fill"
+                    // objectFit="cover"
+                    width={250}
+                    height={150}
+                    priority
+                    className="transition-transform duration-300 transform hover:scale-110 rounded-box "
+                  />
+                </div>
+                <div className="flex-1 text-lg">
+                  <p className="font-light">
+                    Hi guys, I&apos;m Sanera. I&apos;m a web3 enthusiast and
+                    extraordinaire. Having spent a considerable amount of time
+                    honing my craft and skills, and achieving standard results
+                    to prove my competence and excellence, I&apos;m confident I
+                    can produce excellent results in whatever you might want me
+                    to do for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          }
           onClose={() => setIsAboutModalVisible(false)}
         />
       )}
       {isServicesModalVisible && (
         <Modal
-          className="text-customGold text-3xl uppercase border border-customGold rounded-box p-6 flex flex-col text-center items-center bg-base-300 bg-opacity-60"
+          className="text-3xl border-2 shadow-sm shadow-pink1 border-indigoPurple rounded-box p-6 flex flex-col text-center items-center bg-black bg-opacity-100"
           content={<div className="flex flex-col items-center">Loading...</div>}
           onClose={() => setIsServicesModalVisible(false)}
         />

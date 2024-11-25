@@ -3,47 +3,65 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Modal from "../components/Modal";
 
 const Home = () => {
-  const [isAboutModalVisible, setIsAboutModalVisible] = useState(false);
-  const [isServicesModalVisible, setIsServicesModalVisible] = useState(false);
+  const [isPortfolioModalVisible, setIsPortfolioModalVisible] = useState(false);
+  // const [isServicesModalVisible, setIsServicesModalVisible] = useState(false);
   const router = useRouter();
 
   const handleContactClick = () => {
     router.push("/home/contact");
   };
 
-  const handleServicesClick = () => {
-    setIsServicesModalVisible(true);
-    setIsAboutModalVisible(false);
-    console.log(isServicesModalVisible);
+  // const handleServicesClick = () => {
+  //   setIsServicesModalVisible(true);
+  //   setIsPortfolioModalVisible(false);
+  //   console.log(isServicesModalVisible);
+  // };
+
+  const handlePortfolioClick = () => {
+    setIsPortfolioModalVisible(true);
+    // setIsServicesModalVisible(false);
+    console.log(isPortfolioModalVisible);
   };
 
-  const handleAboutClick = () => {
-    setIsAboutModalVisible(true);
-    setIsServicesModalVisible(false);
-    console.log(isAboutModalVisible);
+  const handleXClick = () => {
+    throw new Error("Function not implemented.");
   };
 
   return (
-    <div className="min-h-screen w-fit h-full p-5 bg-black">
-      <header>
+    <div className="min-h-screen w-fit h-full p-5 bg-black relative">
+      <header className="">
         <Navbar />
       </header>
-      <main className="flex flex-wrap mt-5">
-        <div className="flex lg:flex-1 flex-wrap justify-center mr-5">
+      <div className=" flex justify-center mt-20">
+        <div className=" flex items-center m-5">
+          <Image
+            src="/coverbanner.jpg"
+            alt="Sanera"
+            width={1000}
+            height={50}
+            priority
+            className="transition-transform duration-300 transform hover:scale-110 rounded-box"
+          />
+        </div>
+      </div>
+      <main className="flex flex-wrap">
+        <div className="flex lg:flex-1 flex-wrap justify-center">
           <div className="flex flex-row p-2 mb-2 rounded-box w-full">
             <div className="card bg-amber text-primary-content flex flex-grow mr-5">
               <div className="card-body">
                 <h2 className="card-title font-extrabold text-4xl">About Me</h2>
                 <p className="font-light">
-                  Hi, I&apos;m Sanera. I&apos;m a web3 enthusiast and extraordinaire.
-                  Having spent a considerable amount of time honing my craft and
-                  skills, and achieving standard results to prove my competence
-                  and excellence, I&apos;m confident I can produce excellent results
-                  in whatever you might want me to do for you.
+                  Hi, I&apos;m Sanera. I&apos;m a web3 enthusiast and
+                  extraordinaire. Having spent a considerable amount of time
+                  honing my craft and skills, and achieving standard results to
+                  prove my competence and excellence, I&apos;m confident I can
+                  produce excellent results in whatever you might want me to do
+                  for you.
                 </p>
 
                 <h2 className="card-title italic text-xs text-amber mt-4 text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">
@@ -51,9 +69,11 @@ const Home = () => {
                 </h2>
                 <p className="font-regular italic text-xs leading-relaxed">
                   &quot;Don&apos;t be afraid to take that{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">leap, </span>
-                  Just do whatever it is you&apos;ve always wanted. You&apos;re actually
-                  running out of time so stop wasting it... <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">
+                    leap,{" "}
+                  </span>
+                  Just do whatever it is you&apos;ve always wanted. You&apos;re
+                  actually running out of time so stop wasting it... <br />
                   GM 🤍&quot;
                 </p>
               </div>
@@ -71,7 +91,7 @@ const Home = () => {
                 />
 
                 {/* Button positioned on top of the image */}
-                <div className="bg-transparent absolute top-0 min-w-48 h-2 z-10 shadow-md shadow-black"></div>
+                {/* <div className="bg-transparent absolute top-0 min-w-48 h-2 z-10 shadow-md shadow-black"></div> */}
                 <div className="absolute top-2 right-2 z-10">
                   <button className="btn z-20 bg-transparent border-none">
                     <Image
@@ -94,13 +114,15 @@ const Home = () => {
                     Portfolio
                   </h2>
                   <p className="font-extrabold">&</p>
-                  <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">resume</p>
+                  <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">
+                    resume
+                  </p>
                 </div>
                 <div className="card-actions justify-center">
                   <div className="btn bg-indigoPurple border-none">
                     <button
                       className="btn bg-indigoPurple border-none text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
-                      onClick={handleAboutClick}
+                      onClick={handlePortfolioClick}
                     >
                       View
                     </button>
@@ -132,7 +154,10 @@ const Home = () => {
           <div className="card bg-amber text-primary-content w-full lg:w-96 mb-5">
             <div className="card-body items-center">
               <h2 className="card-title mb-10 font-bold text-2xl">
-                SERVICE<span className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">info</span>
+                SERVICE
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">
+                  info
+                </span>
               </h2>
               <div className="flex flex-col text-white text-2xl font-bold items-center">
                 <div className="btn bg-indigoPurple border-none mb-10">
@@ -190,20 +215,42 @@ const Home = () => {
           </div>
         </div>
       </main>
-      {isAboutModalVisible && (
+      {isPortfolioModalVisible && (
         <Modal
-          className="text-customGold text-3xl uppercase border border-customGold rounded-box p-6 flex flex-col text-center items-center bg-base-300 bg-opacity-60"
-          content={<div className="flex flex-col items-center">Loading...</div>}
-          onClose={() => setIsAboutModalVisible(false)}
+          className="text-3xl border-2 shadow-sm shadow-pink1 border-indigoPurple rounded-box p-6 flex flex-col text-center items-center bg-black bg-opacity-100"
+          content={
+            <div className="flex flex-col items-center">
+              <div className="mb-5">
+                <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">MY PORTFOLIO?</h1>
+              </div>
+              <div className="text-sm mb-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem fugiat deserunt eveniet provident quis nihil illum,
+                  ipsa ipsam accusamus reiciendis praesentium possimus ratione
+                  harum inventore quam rerum dolorum odio neque?
+                </p>
+              </div>
+              <div className="btn bg-indigoPurple border-none">
+                <button
+                  className="btn bg-indigoPurple border-none text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-amber font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                  onClick={handleXClick}
+                >
+                  Sanera Germaine
+                </button>
+              </div>
+            </div>
+          }
+          onClose={() => setIsPortfolioModalVisible(false)}
         />
       )}
-      {isServicesModalVisible && (
+      {/* {isServicesModalVisible && (
         <Modal
           className="text-customGold text-3xl uppercase border border-customGold rounded-box p-6 flex flex-col text-center items-center bg-base-300 bg-opacity-60"
           content={<div className="flex flex-col items-center">Loading...</div>}
           onClose={() => setIsServicesModalVisible(false)}
         />
-      )}
+      )} */}
     </div>
   );
 };
