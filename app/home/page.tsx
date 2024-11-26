@@ -9,22 +9,22 @@ import Modal from "../components/Modal";
 
 const Home = () => {
   const [isPortfolioModalVisible, setIsPortfolioModalVisible] = useState(false);
-  // const [isServicesModalVisible, setIsServicesModalVisible] = useState(false);
+  const [isServicesModalVisible, setIsServicesModalVisible] = useState(false);
   const router = useRouter();
 
   const handleContactClick = () => {
     router.push("/home/contact");
   };
 
-  // const handleServicesClick = () => {
-  //   setIsServicesModalVisible(true);
-  //   setIsPortfolioModalVisible(false);
-  //   console.log(isServicesModalVisible);
-  // };
+  const handleServicesClick = () => {
+    setIsServicesModalVisible(true);
+    setIsPortfolioModalVisible(false);
+    console.log(isServicesModalVisible);
+  };
 
   const handlePortfolioClick = () => {
     setIsPortfolioModalVisible(true);
-    // setIsServicesModalVisible(false);
+    setIsServicesModalVisible(false);
     console.log(isPortfolioModalVisible);
   };
 
@@ -161,22 +161,34 @@ const Home = () => {
               </h2>
               <div className="flex flex-col text-white text-2xl font-bold items-center">
                 <div className="btn bg-indigoPurple border-none mb-10">
-                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                  <button
+                    onClick={handleServicesClick}
+                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                  >
                     TWEETS
                   </button>
                 </div>
                 <div className="btn bg-indigoPurple border-none mb-10">
-                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                  <button
+                    onClick={handleServicesClick}
+                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                  >
                     THREADS
                   </button>
                 </div>
                 <div className="btn bg-indigoPurple border-none mb-10">
-                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                  <button
+                    onClick={handleServicesClick}
+                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                  >
                     SPACES & AMAs
                   </button>
                 </div>
                 <div className="btn bg-indigoPurple border-none mb-10">
-                  <button className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber">
+                  <button
+                    onClick={handleServicesClick}
+                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                  >
                     SPECIAL PACKAGE
                   </button>
                 </div>
@@ -184,7 +196,11 @@ const Home = () => {
             </div>
           </div>
           <div className="flex bg-indigoPurple p-5 rounded-box mb-5 space-x-7">
-            <Link href={"https://x.com/SaneraGermaine"}>
+            <Link
+              href={"https://x.com/SaneraGermaine"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="/x-logo.svg"
                 alt="images"
@@ -235,14 +251,14 @@ const Home = () => {
               </div>
               <div className="text-sm mb-5">
                 <p>
-                  Looking for my portfolio&#63; Looking for my resume&#63; A portfolio
-                  is something that showcases past works and efforts made in a
-                  particular field to prove competence in that field.
-                  <br /> 
+                  Looking for my portfolio&#63; Looking for my resume&#63; A
+                  portfolio is something that showcases past works and efforts
+                  made in a particular field to prove competence in that field.
+                  <br />
                   <br />
                   For me, that equates to my X account. Any expertise or
-                  competence you might want to check or analyze is all there for you to see.
-
+                  competence you might want to check or analyze is all there for
+                  you to see.
                   <br />
                   <br />
                   See for yourself 👇
@@ -267,13 +283,13 @@ const Home = () => {
           onClose={() => setIsPortfolioModalVisible(false)}
         />
       )}
-      {/* {isServicesModalVisible && (
+      {isServicesModalVisible && (
         <Modal
-          className="text-customGold text-3xl uppercase border border-customGold rounded-box p-6 flex flex-col text-center items-center bg-base-300 bg-opacity-60"
+          className="text-3xl border-2 shadow-sm shadow-pink1 border-indigoPurple rounded-box p-6 flex flex-col text-center items-center bg-black bg-opacity-100"
           content={<div className="flex flex-col items-center">Loading...</div>}
           onClose={() => setIsServicesModalVisible(false)}
         />
-      )} */}
+      )}
     </div>
   );
 };
