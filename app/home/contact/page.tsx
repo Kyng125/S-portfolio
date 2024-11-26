@@ -21,7 +21,7 @@ const Contact = () => {
         </button>
       </div>
       <div className="flex flex-col mt-5">
-        <div className="mb-5">
+        <div className="flex mb-5">
           <h1 className="flex font-bold mb-4 text-3xl text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">
             CONTACT ME
           </h1>

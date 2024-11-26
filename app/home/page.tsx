@@ -184,34 +184,42 @@ const Home = () => {
             </div>
           </div>
           <div className="flex bg-indigoPurple p-5 rounded-box mb-5 space-x-7">
-            <Image
-              src="/x-logo.svg"
-              alt="images"
-              width={30}
-              height={10}
-              className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
-            />
-            <Image
-              src="/instagram-logo.svg"
-              alt="images"
-              width={30}
-              height={10}
-              className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
-            />
-            <Image
-              src="/whatsapp-logo.svg"
-              alt="images"
-              width={30}
-              height={10}
-              className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
-            />
-            <Image
-              src="/telegram-logo.svg"
-              alt="images"
-              width={30}
-              height={10}
-              className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
-            />
+            <Link href={"https://x.com/SaneraGermaine"}>
+              <Image
+                src="/x-logo.svg"
+                alt="images"
+                width={30}
+                height={10}
+                className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
+              />
+            </Link>
+            <Link href={""}>
+              <Image
+                src="/instagram-logo.svg"
+                alt="images"
+                width={30}
+                height={10}
+                className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
+              />
+            </Link>
+            <Link href={""}>
+              <Image
+                src="/whatsapp-logo.svg"
+                alt="images"
+                width={30}
+                height={10}
+                className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
+              />
+            </Link>
+            <Link href={""}>
+              <Image
+                src="/telegram-logo.svg"
+                alt="images"
+                width={30}
+                height={10}
+                className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
       </main>
@@ -221,24 +229,39 @@ const Home = () => {
           content={
             <div className="flex flex-col items-center">
               <div className="mb-5">
-                <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">MY PORTFOLIO?</h1>
+                <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">
+                  MY PORTFOLIO&#63;
+                </h1>
               </div>
               <div className="text-sm mb-5">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem fugiat deserunt eveniet provident quis nihil illum,
-                  ipsa ipsam accusamus reiciendis praesentium possimus ratione
-                  harum inventore quam rerum dolorum odio neque?
+                  Looking for my portfolio&#63; Looking for my resume&#63; A portfolio
+                  is something that showcases past works and efforts made in a
+                  particular field to prove competence in that field.
+                  <br /> 
+                  <br />
+                  For me, that equates to my X account. Any expertise or
+                  competence you might want to check or analyze is all there for you to see.
+
+                  <br />
+                  <br />
+                  See for yourself 👇
                 </p>
               </div>
-              <div className="btn bg-indigoPurple border-none">
-                <button
-                  className="btn bg-indigoPurple border-none text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-amber font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
-                  onClick={handleXClick}
-                >
-                  Sanera Germaine
-                </button>
-              </div>
+              <Link
+                href={"https://x.com/SaneraGermaine"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="btn bg-indigoPurple border-none">
+                  <button
+                    className="btn bg-indigoPurple border-none text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-amber font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                    onClick={handleXClick}
+                  >
+                    Sanera Germaine
+                  </button>
+                </div>
+              </Link>
             </div>
           }
           onClose={() => setIsPortfolioModalVisible(false)}
