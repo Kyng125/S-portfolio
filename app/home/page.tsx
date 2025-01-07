@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Modal from "../components/Modal";
+import VideoSection from "../components/VideoSection";
+import BlinkingArrow from "../components/BlinkingArrow";
 
 const Home = () => {
   const [isPortfolioModalVisible, setIsPortfolioModalVisible] = useState(false);
@@ -37,18 +39,21 @@ const Home = () => {
       <header className="">
         <Navbar />
       </header>
-      <div className=" flex justify-center mt-20">
-        <div className=" flex items-center m-5">
+      <BlinkingArrow />
+      <div className=" flex justify-center mt-20 mb-2">
+        <div className=" flex flex-col items-center m-5">
+          <VideoSection />
           <Image
             src="/coverbanner.jpg"
             alt="Sanera"
-            width={1000}
+            width={500}
             height={50}
             priority
-            className="transition-transform duration-300 transform hover:scale-110 rounded-box"
+            className="transition-transform duration-300 transform hover:scale-110 rounded-box opacity-20 -z-10"
           />
         </div>
       </div>
+      <hr className="bg-electricPurple mb-10 h-1 rounded-box" />
       <main className="flex flex-wrap">
         <div className="flex lg:flex-1 flex-wrap justify-center">
           <div className="flex flex-row p-2 mb-2 rounded-box w-full">

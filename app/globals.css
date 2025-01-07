@@ -140,6 +140,16 @@
 }
 
 
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the section takes up the full height of the viewport */
+  padding: 0 10%; /* Optional, to add padding on the sides */
+}
 
-
-
+.video-container {
+  max-width: 80%;  /* Reduce video size */
+  width: 100%;
+  height: auto;
+}
