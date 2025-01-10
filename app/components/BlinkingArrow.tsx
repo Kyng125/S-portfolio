@@ -1,8 +1,18 @@
 import React from "react";
 
 const BlinkingArrow = () => {
+  const handleScrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="fixed top-28 right-4 flex flex-col items-center animate-bounce z-50">
+    <div
+      className="fixed top-28 right-4 flex flex-col items-center animate-bounce z-50 cursor-pointer"
+      onClick={handleScrollToBottom}
+    >
       <span className="text-white font-bold text-sm mb-1">Scroll Down</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"

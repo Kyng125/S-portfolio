@@ -47,9 +47,9 @@ const Home = () => {
             src="/coverbanner.jpg"
             alt="Sanera"
             width={500}
-            height={50}
+            height={25}
             priority
-            className="transition-transform duration-300 transform hover:scale-110 rounded-box opacity-20 -z-10"
+            className="transition-transform duration-300 transform hover:scale-110 rounded-box opacity-20 -z-0"
           />
         </div>
       </div>

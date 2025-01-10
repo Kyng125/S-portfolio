@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-indigoPurple rounded-2xl p-5 shadow-md shadow-black fixed top-3 left-3 right-2 box-border w-full z-10">
+      <div className="navbar bg-indigoPurple rounded-2xl p-5 shadow-md shadow-black fixed top-3 left-3 right-2 box-border w-full z-50">
         <div className="flex-1">
           <p
             className="font-extrabold text-xl text cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-amber transition-transform duration-200 ease-linear transform hover:scale-110"
