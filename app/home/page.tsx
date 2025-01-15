@@ -53,7 +53,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <hr className="bg-electricPurple mb-10 h-1 rounded-box" />
+      {/* <hr className="bg-electricPurple mb-10 h-1 rounded-box" /> */}
       <main className="flex flex-wrap">
         <div className="flex lg:flex-1 flex-wrap justify-center">
           <div className="flex flex-row p-2 mb-2 rounded-box w-full">
