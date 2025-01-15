@@ -29,9 +29,9 @@ const Contact = () => {
 
     try {
       // Send email using EmailJS
-      const serviceId = "your_service_id"; // Replace with your EmailJS service ID
-      const templateId = "your_template_id"; // Replace with your EmailJS template ID
-      const userId = "your_user_id"; // Replace with your EmailJS user ID
+      const serviceId = "service_t0w0l4n"; // Replace with your EmailJS service ID
+      const templateId = "template_pp1ypka"; // Replace with your EmailJS template ID
+      const userId = "xFb4VMQcszaTUqa5o"; // Replace with your EmailJS user ID
 
       await emailjs.send(serviceId, templateId, formData, userId);
 
