@@ -107,7 +107,15 @@ const Navbar = () => {
       {isServicesModalVisible && (
         <Modal
           className="text-3xl border-2 shadow-sm shadow-pink1 border-indigoPurple rounded-box p-6 flex flex-col text-center items-center bg-black bg-opacity-100"
-          content={<div className="flex flex-col items-center">Loading...</div>}
+          content={
+            <div className="flex flex-col items-center text-lg">
+              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">
+                <h2>Interested in my services?</h2>
+              </span>{" "}
+              <br />
+              Reach out to me on the contact page
+            </div>
+          }
           onClose={() => setIsServicesModalVisible(false)}
         />
       )}

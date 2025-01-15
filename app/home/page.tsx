@@ -126,7 +126,7 @@ const Home = () => {
                 <div className="card-actions justify-center">
                   <div className="btn bg-indigoPurple border-none">
                     <button
-                      className="btn bg-indigoPurple border-none text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                      className="btn bg-indigoPurple border-none shadow-md shadow-black text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
                       onClick={handlePortfolioClick}
                     >
                       View
@@ -168,7 +168,7 @@ const Home = () => {
                 <div className="btn bg-indigoPurple border-none mb-10">
                   <button
                     onClick={handleServicesClick}
-                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                    className="btn bg-indigoPurple shadow-md shadow-black border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
                   >
                     TWEETS
                   </button>
@@ -176,7 +176,7 @@ const Home = () => {
                 <div className="btn bg-indigoPurple border-none mb-10">
                   <button
                     onClick={handleServicesClick}
-                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                    className="btn bg-indigoPurple shadow-md shadow-black border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
                   >
                     THREADS
                   </button>
@@ -184,7 +184,7 @@ const Home = () => {
                 <div className="btn bg-indigoPurple border-none mb-10">
                   <button
                     onClick={handleServicesClick}
-                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                    className="btn bg-indigoPurple shadow-md shadow-black border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
                   >
                     SPACES & AMAs
                   </button>
@@ -192,7 +192,7 @@ const Home = () => {
                 <div className="btn bg-indigoPurple border-none mb-10">
                   <button
                     onClick={handleServicesClick}
-                    className="btn bg-indigoPurple border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+                    className="btn bg-indigoPurple shadow-md shadow-black border-none text-2xl text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
                   >
                     SPECIAL PACKAGE
                   </button>
@@ -214,7 +214,7 @@ const Home = () => {
                 className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
               />
             </Link>
-            <Link href={""}>
+            {/* <Link href={""}>
               <Image
                 src="/instagram-logo.svg"
                 alt="images"
@@ -231,7 +231,7 @@ const Home = () => {
                 height={10}
                 className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
               />
-            </Link>
+            </Link> */}
             <Link href={""}>
               <Image
                 src="/telegram-logo.svg"
@@ -291,7 +291,15 @@ const Home = () => {
       {isServicesModalVisible && (
         <Modal
           className="text-3xl border-2 shadow-sm shadow-pink1 border-indigoPurple rounded-box p-6 flex flex-col text-center items-center bg-black bg-opacity-100"
-          content={<div className="flex flex-col items-center">Loading...</div>}
+          content={
+            <div className="flex flex-col items-center text-lg">
+              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">
+                <h2>Interested in my services?</h2>
+              </span>{" "}
+              <br />
+              Reach out to me on the contact page
+            </div>
+          }
           onClose={() => setIsServicesModalVisible(false)}
         />
       )}

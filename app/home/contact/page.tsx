@@ -49,7 +49,7 @@ const Contact = () => {
     <div className="h-full p-5">
       <div className="btn bg-indigoPurple border-none">
         <button
-          className="btn bg-indigoPurple border-none text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
+          className="btn bg-indigoPurple border-none text-white uppercase font-bold relative inline-block cursor-pointer shadow-md shadow-black transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
           onClick={handleBackClick}
         >
           Back to my Homepage
