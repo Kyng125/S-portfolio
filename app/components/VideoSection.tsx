@@ -33,7 +33,7 @@ const VideoSection = () => {
       ref={videoRef}
     >
       <ReactPlayer
-        url="/Sanera_Portfolio_Intro.mp4"
+        url="/Sanera_Intro.webm"
         playing={isPlaying}
         muted={true}
         loop={true}
