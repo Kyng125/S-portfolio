@@ -17,7 +17,7 @@ const Contact = () => {
           className="btn bg-indigoPurple border-none text-white uppercase font-bold relative inline-block cursor-pointer transition-transform duration-200 ease-linear transform hover:scale-110 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink1 hover:to-amber"
           onClick={handleBackClick}
         >
-          Back to Home
+          Back to my Homepage
         </button>
       </div>
       <div className="flex flex-col mt-5">
