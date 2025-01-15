@@ -38,7 +38,7 @@ const VideoSection = () => {
         muted={true}
         loop={true}
         controls={true}
-        width="80%"
+        width="70%"
         height="auto"
         className="rounded-lg shadow-lg"
       />
