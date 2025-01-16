@@ -49,7 +49,7 @@ const Home = () => {
             width={500}
             height={25}
             priority
-            className="transition-transform duration-300 transform hover:scale-110 rounded-box opacity-20 -z-0"
+            className="transition-transform duration-300 transform hover:scale-110 rounded-box opacity-5 -z-0"
           />
         </div>
       </div>
@@ -60,7 +60,7 @@ const Home = () => {
             <div className="card bg-amber text-primary-content flex flex-grow mr-5">
               <div className="card-body">
                 <h2 className="card-title font-extrabold text-4xl">About Me</h2>
-                <p className="font-light">
+                <p className="">
                   Hi, I&apos;m Sanera. I&apos;m a web3 enthusiast and
                   extraordinaire. Having spent a considerable amount of time
                   honing my craft and skills, and achieving standard results to
