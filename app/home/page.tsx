@@ -260,9 +260,11 @@ const Home = () => {
               </div>
               <div className="text-sm mb-5">
                 <p>
-                  Looking for my portfolio&#63; Looking for my resume&#63; A
-                  portfolio is something that showcases past works and efforts
-                  made in a particular field to prove competence in that field.
+                  Looking for my portfolio&#63; Looking for my resume&#63;
+                  <br />
+                  <br /> A portfolio or a resume is something that showcases past works and
+                  efforts made in a particular field to prove competence in that
+                  field.
                   <br />
                   <br />
                   For me, that equates to my X account. Any expertise or
