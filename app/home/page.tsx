@@ -232,7 +232,11 @@ const Home = () => {
                 className="transition-transform duration-300 transform hover:scale-110 hover:cursor-pointer"
               />
             </Link> */}
-            <Link href={"https://t.me/Sanera9"}>
+            <Link
+              href={"https://t.me/Sanera9"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="/telegram-logo.svg"
                 alt="images"
