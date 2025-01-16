@@ -255,7 +255,7 @@ const Home = () => {
             <div className="flex flex-col items-center">
               <div className="mb-5">
                 <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">
-                  MY PORTFOLIO&#63;
+                  My portfolio&#63; My resume&#63;
                 </h1>
               </div>
               <div className="text-sm mb-5">

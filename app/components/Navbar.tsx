@@ -72,7 +72,7 @@ const Navbar = () => {
             <div className="flex flex-col items-center">
               <div className="mb-5">
                 <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-pink1 to-amber">
-                  ABOUT ME
+                  About me
                 </h1>
               </div>
               <div className="flex flex-row items-center">
