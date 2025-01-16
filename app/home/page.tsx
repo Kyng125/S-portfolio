@@ -72,7 +72,7 @@ const Home = () => {
                 <h2 className="card-title italic text-xs text-amber mt-4 text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">
                   What else do I have to say?
                 </h2>
-                <p className="font-regular italic text-xs leading-relaxed">
+                <p className="font-semibold italic text-xs leading-relaxed">
                   &quot;Don&apos;t be afraid to take that{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink1 to-electricPurple">
                     leap,{" "}
